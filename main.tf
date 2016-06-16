@@ -1,7 +1,7 @@
 provider "aws" {
 }
 
-resource "terraform_remote_state" "env" {
+data "terraform_remote_state" "env" {
   backend = "s3"
   config {
     bucket = "${var.bucket_remote_state}"
