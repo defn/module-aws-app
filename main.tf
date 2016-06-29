@@ -8,3 +8,5 @@ data "terraform_remote_state" "env" {
     key = "${var.bucket_remote_state}/env-${var.context_org}-${var.context_env}.tfstate"
   }
 }
+
+variable "app_name" {}
