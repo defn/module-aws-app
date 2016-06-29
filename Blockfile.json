@@ -1,5 +1,6 @@
 {
   "require": [
+    "env-xxx",
     "module-aws-service"
   ]
 }
