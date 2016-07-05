@@ -16,3 +16,7 @@ resource "aws_security_group" "sg" {
     "Name" = "${var.context_org}-${var.context_env}-${var.app_name}"
   }
 }
+
+output "sg_id" {
+  value = "${aws_security_group.sg.id}"
+}
